@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="w-full h-screen overflow-hidden">
+    <div class="w-full h-screen absolute top-0 left-0 z-[2]">
+    <nav class="w-full flex justify-between items-center px-8 py-6">
+      <h1 class="text-white font-bold text-3xl font-['Space_Grotesk'] tracking-wider">Planets</h1>
+      <ul class="flex gap-8">
+        <li><a href="#" class="text-white hover:text-gray-300 transition-colors font-medium">Home</a></li>
+        <li><a href="#" class="text-white hover:text-gray-300 transition-colors font-medium">About</a></li>
+        <li><a href="#" class="text-white hover:text-gray-300 transition-colors font-medium">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="absolute top-[11%] left-1/2 -translate-x-1/2 text-center">
+      <div class="w-full h-[8em] overflow-hidden">
+        <h1 class="heading h-full text-white text-9xl font-bold font-['Space_Grotesk'] tracking-wider">Earth</h1>
+        <h1 class="heading h-full text-white text-9xl font-bold font-['Space_Grotesk'] tracking-wider">Haumea</h1>
+        <h1 class="heading h-full text-white text-9xl font-bold font-['Space_Grotesk'] tracking-wider">Venus</h1>
+        <h1 class="heading h-full text-white text-9xl font-bold font-['Space_Grotesk'] tracking-wider">Mars</h1>
+
+      </div>
+      <p class="text-white text-md font-['Space_Grotesk'] tracking-wider">EXPLORE THE PLANETS AND THEIR SURFACE</p>
+      <div class="flex items-center justify-center mt-2">
+        <div class="w-[400px] h-[1px] bg-gradient-to-r from-transparent to-white"></div>
+        <div class="w-[400px] h-[1px] bg-gradient-to-l from-transparent to-white"></div>
+      </div>
+    </div>
+    </div>
+    <canvas id="canvas"></canvas>
+
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
